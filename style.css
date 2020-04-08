@@ -1,0 +1,131 @@
+header {
+    background: white;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 #eee;
+  }
+  
+  header img {
+    max-width: 50%;
+  }
+  
+  header a {
+    display: block;
+    padding: 3px;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  body {
+    background: rgba(204, 201, 201, 0.726);
+  }
+  main .wrapper {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  main h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+  }
+.notification{
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    pointer-events: none;
+  }
+.notification.red {
+    background-color: #f14668;
+  }
+.notification.green {
+    background-color: #48c774;
+}
+.notification.display{
+    display: block;
+}
+.notification.nodisplay{
+    display: none;
+}
+.notification:after{
+    position: absolute;
+    content: "\2716";
+    position: absolute;
+    cursor: pointer;
+    pointer-events: all;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+}
+
+  
+  footer {
+    text-align: center;
+  }
+  .spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  @media screen and (min-width: 1024px) {
+      header{
+        box-shadow: 0 0 4px 2px #888;
+      }
+    header img {
+      max-width: 60px;
+      vertical-align: middle;
+    }
+    header .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header nav a {
+      display: inline;
+      padding: 0;
+      margin-right: 15px;
+      font-size: 1em;
+    }
+  
+    header nav a:last-child {
+      margin-right: 0;
+    }
+  
+    .wrapper {
+      width: 1024px;
+      margin: 0 auto;
+    }
+  
+    main .wrapper {
+      margin: 20px auto;
+      box-shadow: 0 0 4px 2px #888;
+    }
+    main form {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+    .input-group {
+      width: 49%;
+      margin-top: 1em
+    }
+  
+    .input-group:nth-child(odd) {
+      margin-right: 2%;
+    }
+  
+  }
+  
